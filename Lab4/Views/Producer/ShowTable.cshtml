@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Производитель";
+    @model List<Producer>;
+}
+
+<div class="text-center">
+     <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Название</th>
+            <th>Страна</th>
+        </tr>
+        @foreach(var producer in Model) {
+            <tr>
+                <td>
+                    @producer.Id
+                </td>
+                <td>
+                    @producer.Name
+                </td>
+                <td>
+                    @producer.Country
+                </td>
+            </tr>
+        }
+    </table>
+</div>
