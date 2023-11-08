@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Lab4;
 
@@ -21,8 +22,8 @@ public partial class Medicine
 
     public string StorageLocation { get; set; } = null!;
 
-
     public virtual ICollection<Outgoing> Outgoings { get; set; } = new List<Outgoing>();
 
     public virtual Producer Producer { get; set; } = null!;
+
 }

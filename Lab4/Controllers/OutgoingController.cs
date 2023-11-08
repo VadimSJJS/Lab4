@@ -16,7 +16,7 @@ namespace Lab4.Controllers
         public IActionResult ShowTable()
         {
             var pharmacyTypes = db.Outgoings
-                .Include(ia => ia.MedicineName)
+                .Include(ia => ia.Medicine)
                 .ToList();
             return View(pharmacyTypes);
         }

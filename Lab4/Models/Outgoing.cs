@@ -7,7 +7,7 @@ public partial class Outgoing
 {
     public int Id { get; set; }
 
-    public int MedicineNameId { get; set; }
+    public int MedicineId { get; set; }
 
     public DateTime ImplementationDate { get; set; }
 
@@ -15,5 +15,5 @@ public partial class Outgoing
 
     public decimal SellingPrice { get; set; }
 
-    public virtual Medicine MedicineName { get; set; } = null!;
+    public virtual Medicine Medicine { get; set; } = null!;
 }
